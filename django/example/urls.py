@@ -7,5 +7,5 @@ from example.views import hello
 
 urlpatterns = [
     path('', index),
-    path('hello', hello),
+    path('/hello', hello),
 ]
