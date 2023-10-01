@@ -12,5 +12,5 @@ def hello(request):
     return HttpResponse('hello aaaaa')
 
 
-def api(request, name):
-    return HttpResponse('hello :' + name)
+def api(request):
+    return HttpResponse('hello :' + request.GET.get('name'))
